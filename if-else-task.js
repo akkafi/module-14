@@ -32,23 +32,74 @@ Create a JavaScript program that calculates the Body Mass Index (BMI) and assign
 
 */
 
-const weight = 85; // in kg
-const height = 1.68; // in meters
-const bmi = weight / (height * height);
+// const weight = 85; // in kg
+// const height = 1.68; // in meters
+// const bmi = weight / (height * height);
 
-if(bmi < 18.5){
-    console.log(bmi);
-    console.log("You are underweight.");
+// if(bmi < 18.5){
+//     console.log(bmi);
+//     console.log("You are underweight.");
+// }
+// else if(bmi >= 18.5 && bmi <= 24.9){
+//     console.log(bmi);
+//     console.log("You are normal.");
+// }
+// else if(bmi >= 25 && bmi <= 29.9){
+//     console.log(bmi);
+//     console.log("You are overweight.");
+// }
+// else{
+//     console.log(bmi);
+//     console.log("You are obese.");
+// };
+
+
+
+/***
+//! Task- 3
+Grade Calculator
+
+Create a simple JavaScript program that takes a student's score as input and returns their corresponding grade based on the following grading scale:
+
+    A: 90-100
+    B: 80-89
+    C: 70-79
+    D: 60-69
+    F: 0-59
+
+***/
+
+const score = 39;
+
+if(score >= 90 && score <= 100){
+    console.log(score);
+    console.log("Hurry! You got A+ grade.");
 }
-else if(bmi >= 18.5 && bmi <= 24.9){
-    console.log(bmi);
-    console.log("You are normal.");
+else if(score >= 80 && score <= 89){
+    console.log(score);
+    console.log("Very Good! You got A grade.");
 }
-else if(bmi >= 25 && bmi <= 29.9){
-    console.log(bmi);
-    console.log("You are overweight.");
+else if(score >= 70 && score <=79){
+    console.log(score);
+    console.log("Good! You got A- grade.");
+}
+else if (score >= 60 && score <= 69){
+    console.log(score);
+    console.log("You got B grade.");
+}
+else if(score >= 50 && score <= 59){
+    console.log(score);
+    console.log("You got C grade.");
+}
+else if(score >= 40 && score <= 49){
+    console.log(score);
+    console.log("You got D grade.");
+}
+else if(score >= 33 && score <= 39){
+    console.log(score);
+    console.log("You got E grade.");
 }
 else{
-    console.log(bmi);
-    console.log("You are obese.");
-};
+    console.log(score);
+    console.log("Sorry! You got F grade.");
+}
